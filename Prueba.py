@@ -1,3 +1,4 @@
+
 # print("Ingrese su nombre")
 # nombre=input()
 # edad=int(input("Ingrese su edad: "))
@@ -73,6 +74,49 @@
 #     print(num, " X ", i+1, " = ", num*(i+1))
 
 
+# 4)
+
+
+# num=int(input("Ingrese la cantidad de notas: "))
+# suma=0
+# for i in range(num):
+#     nota=float(input("Ingresa la nota: "))
+#     suma=suma+nota
+# prom=suma/num
+# print("El promedio es: ", prom)
+# if prom >= 4:
+#     print("El alumno aprobó")
+# else:
+#     print("El alumno reprobó")
+
+
+# 5)
+
+# for i in "TunTunSahur":
+#     print(i)
+
+
+# 6)
+
+
+# nom=input("Ingrese su nombre: ")
+# cont=nom
+# for i in nom:
+#     print(i)
+#     cont=cont+1
+# print("La cantidad de caracteres es: ", cont)
+
+
+# 7)
+
+
+# nom=input("Ingrese su nombre: ")
+# cont=nom
+# cont=0
+# for i in nom:
+#     if i in "aeiouAEIOU":
+#     cont=+1
+# print("La cantidad de caracteres es: ", cont)
 
 # ========================================
 

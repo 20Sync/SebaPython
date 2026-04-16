@@ -120,3 +120,90 @@
 
 # ========================================
 
+
+
+# num=int(input("Ingrese cantidad de notas: "))
+# sum=0
+# for i in range (num):
+#     notas=float(input(f"Ingrese la nota {i+1}: "))
+#     sum=sum+notas
+# prom=sum/notas
+# print("Promedio: ",round(prom, 1))
+
+# if prom>= 4:
+#     print("El alumno aprobo")
+# else:
+#     print("Alumno reprobó")
+
+# titulo="Clima actual" #Tipo string
+# temp=18.6 #float
+# DiaDelMes=16 #int
+# Mes=4 #int
+# Llueve=False
+
+# print(f"{titulo}")
+# print(f"Fecha de hoy: {DiaDelMes}-{Mes}")
+# print(f"temperatura actual: {temp} Grados")
+
+# if Llueve:
+#     print("Saque el paraguas")
+# else:
+#     print("No saque paraguas")
+
+# num=int(input("Ingrese un numero: "))
+# for i in range(num):
+#     print(f"{i+1} Hola guatona con moño")
+
+
+#Pedir nombre al usuario y decirle cuantas letras son
+
+
+# nom=(input("Ingrese su nombre: "))
+# cont=0
+# for i in nom:
+#     cont=cont+1
+# print(f"Su nombre posee: {cont} caracteres")
+
+#Se usa f {variable} para usar una concatenacion dentro de una linea de codigo (print)
+
+
+#Contar solamente las vocales en un nombre
+
+
+# nom=(input("Ingrese su nombre: "))
+# vocales=0
+# for i in nom:
+#     # vocales=vocales+1
+#     if i in "aeiou" "AEIOU":
+#         vocales+=1
+# print(f"Su nombre posee: {vocales} vocales")
+
+
+#Contar solamente las consonantes
+
+
+# nom=(input("Ingrese su nombre: "))
+# consonantes=0
+# for i in nom:
+#     # vocales=vocales+1
+#     if i in "BCDFGHJKLMNÑPQRSTVXZWY" "bcdfghjklmnñpqrstvxzwy":
+#         consonantes+=1
+# print(f"Su nombre posee: {consonantes} consonantes")
+
+
+#Vocales y consonantes: 
+
+
+# nom=(input("Ingrese su nombre: "))
+# vocales=0
+# cons=0
+# for i in nom:
+#     # vocales=vocales+1
+#     if i in "aeiou" "AEIOU":
+#         vocales+=1
+#     elif i==" ":
+#         print()
+#     else:
+#         cons+=1
+# print(f"Su nombre posee: {vocales} vocales")
+# print(f"Su nombre posee: {cons} consonantes")

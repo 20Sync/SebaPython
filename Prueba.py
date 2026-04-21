@@ -208,3 +208,97 @@
 # print(f"Su nombre posee: {vocales} vocales")
 # print(f"Su nombre posee: {cons} consonantes")
 
+#Formas de concatenar
+
+
+# ent1="Seba"
+# equip1=6
+
+# ent2="Jairito"
+# equip2=4
+
+# print(f"El entrenador {ent1} Tiene {equip1} Pokemons")
+# print("El entrenador", ent1,  "Tiene", equip1,  "Pokemons")
+
+
+#Repeticion de una variable
+
+
+# print((ent1+" ")*5)
+
+
+#Caracter
+
+
+# name="Seba"
+
+# print(name[3])
+
+
+#Funciones para strings
+
+
+# name=" Seba "
+
+# print(name.strip()) #Junta los espacios
+# print(name.lower()) #Minuscula
+# print(name.upper()) #Mayuscula
+# print(name.upper().strip()) #Combinacion de ambos
+# print(name.replace("Seba", "Tomas")) #Reemplazar string
+# print(name.split()) #Hacer lista
+# print(name.replace("Seba", "Tomas").split()) #Combinacion de ambos
+# print(len(name))
+
+
+#Ejercicio 1
+
+# clave="SHAZAM"
+
+# pasw=input("Ingrese la clave: ")
+
+# if pasw.upper() == clave:
+
+#     print("Clave Correcta")
+
+# else:
+#     print("Clave Incorrecta")
+
+
+#Ejercicio 2
+
+
+# nom=input("Ingrese un nombre de usuario: ")
+
+# if len(nom) in range(4,10):
+#       print("Sucess")
+# else:
+#     print("Unsucess")
+
+
+#Ejercicio 3
+
+
+# pin=(input("CREE PIN DE 4 DIGITOS: "))
+
+# if len(str(pin)) in range(4, 5):
+#      print("Pin creado correctamente")
+# else:
+#      print("Pin Invalido")
+
+     
+# pin=int(input("CREE PIN DE 4 DIGITOS: "))
+
+# if pin> 1000 and pin <9999:
+#      print("Pin creado correctamente")
+# else:
+#      print("Pin Invalido")
+
+
+
+
+
+
+
+
+
+

@@ -120,7 +120,7 @@
 
 # ========================================
 
-
+#Promedio
 
 # num=int(input("Ingrese cantidad de notas: "))
 # sum=0
@@ -207,6 +207,7 @@
 #         cons+=1
 # print(f"Su nombre posee: {vocales} vocales")
 # print(f"Su nombre posee: {cons} consonantes")
+
 
 #Formas de concatenar
 
@@ -295,10 +296,260 @@
 
 
 
+#Uso del match y case
+
+# print("1.- Opcion 1")
+# print("1.- Opcion 1")
+# print("1.- Opcion 1")
+# print("Seleccione una opcion")
+# op=int(input())
+# match op:
+#     case 1:
+#         print("El total a pagar es: ")
+#     case 2:
+#         print("El total a pagar es: ")
+#     case 3:
+#         print("El total a pagar es: ")
+#     case _:
+#         print("Opcion invalida")
+
+#Usar while
 
 
+# cont=1
+# while cont<=3:
+#     print(f"El contador es {cont}")
+#     cont+=1
+
+#================================================
+
+# pin=5656
+# num=int(input("Ingrese su pin: "))
+# while num != pin:
+#     print("Clave erronea")
+#     num=int(input("Ingrese su pin: "))
+# print("Bienvenido al sistema")
+
+#================================================
 
 
+#Tienda
+
+# op=0
+# total=0
+# while op != 4:
+#     print("1.- PC $500.000")
+#     print("2.- LGTV $450.000")
+#     print("3.- MICROONDAS $100.000")
+#     print("4.- SALIR")
+#     op=int(input())
+#     match op:
+#         case 1:
+#             print(f"El total a pagar es: {500000*1.19}" )
+#             total+=500000*1.19
+#         case 2:
+#             print(f"El total a pagar es: {450000*1.19}")
+#             total+=450000*1.19
+#         case 3:
+#             print(f"El total a pagar es: {100000*1.19}")
+#             total+=100000*1.19
+#         case 4:
+#             print("Saliendo")
+#             print(f"El total a pagar es {total}")
+#         case _:
+#             print("Opcion invalida")
 
 
+#================================================
 
+#Calculadora
+
+
+# op=0
+# total=0
+# while op != 5:
+#     print("== CALCULADORA ==")
+#     print("1.- Sumar")
+#     print("2.- Restar")
+#     print("3.- Multiplicar")
+#     print("4.- Dividir")
+#     print("5.- SALIR")
+#     op=int(input())
+#     match op:
+#         case 1:
+#             n1=int(input("Ingrese un numero: "))
+#             n2=int(input("Ingrese otro numero: "))
+#             print(f"El resultado es {n1+n2}") 
+
+#         case 2:
+#             n1=int(input("Ingrese un numero: "))
+#             n2=int(input("Ingrese otr numero: "))
+#             print(f"El resultado es {n1-n2}") 
+
+#         case 3:
+#             n1=int(input("Ingrese un numero: "))
+#             n2=int(input("Ingrese otr numero: "))
+#             print(f"El resultado es {n1*n2}") 
+
+#         case 4:
+#             n1=int(input("Ingrese un numero: "))
+#             n2=int(input("Ingrese otr numero: "))
+#             print(f"El resultado es {n1/n2}") 
+
+#         case 5:
+#             print("Saliendo")
+
+#         case _:
+#             print("Opcion invalida")
+
+
+#================================================
+
+
+#Funciones
+
+#DEF se usa para acelerar, asignar y definir procesos en una funcion (basicamente asigan todo un bloque de codigo a una sola variable)
+
+# def suma():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     print(f"El resultado es {n1+n2}")
+# def resta():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     print(f"El resultado es {n1-n2}")
+# def mult():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     print(f"El resultado es {n1*n2}")
+# def div():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     print(f"El resultado es {n1/n2}")
+# def calculadora():
+    op=0
+    total=0
+    while op != 5:
+        print("== CALCULADORA ==")
+        print("1.- Sumar")
+        print("2.- Restar")
+        print("3.- Multiplicar")
+        print("4.- Dividir")
+        print("5.- SALIR")
+        op=int(input())
+     match op:
+        case 1:
+            suma()
+
+        case 2:
+            resta()
+
+        case 3:
+            mult()
+
+        case 4:
+            div() 
+
+        case 5:
+            print("Saliendo")
+
+        case _:
+            print("Opcion invalida")
+
+
+#Tarea 1
+
+# def promedio():
+#     num=int(input("Ingrese la cantidad de notas: "))
+#     suma=0
+#     for i in range(num):
+#         nota=float(input("Ingresa la nota: "))
+#         suma=suma+nota
+#     prom=suma/num
+#     print("El promedio es: ", prom)
+#     if prom >= 4:
+#         print("El alumno aprobó")
+#     else:
+#         print("El alumno reprobó")
+# def calculadora():
+#      op=0
+#      total=0
+#      while op != 5:
+#         print("== CALCULADORA ==")
+#         print("1.- Sumar")
+#         print("2.- Restar")
+#         print("3.- Multiplicar")
+#         print("4.- Dividir")
+#         print("5.- SALIR")
+#         op=int(input())
+#         match op:
+#             case 1:
+#                 n1=int(input("Ingrese un numero: "))
+#                 n2=int(input("Ingrese otro numero: "))
+#                 print(f"El resultado es {n1+n2}") 
+
+#             case 2:
+#                 n1=int(input("Ingrese un numero: "))
+#                 n2=int(input("Ingrese otr numero: "))
+#                 print(f"El resultado es {n1-n2}") 
+
+#             case 3:
+#                 n1=int(input("Ingrese un numero: "))
+#                 n2=int(input("Ingrese otr numero: "))
+#                 print(f"El resultado es {n1*n2}") 
+
+#             case 4:
+#                 n1=int(input("Ingrese un numero: "))
+#                 n2=int(input("Ingrese otr numero: "))
+#                 print(f"El resultado es {n1/n2}") 
+
+#             case 5:
+#                 print("Saliendo")
+
+#             case _:
+#                 print("Opcion invalida")
+# def tienda():
+#     op=0
+#     total=0
+#     while op != 4:
+#         print("== TIENDA ==")
+#         print("1.- PC $500.000")
+#         print("2.- LGTV $450.000")
+#         print("3.- MICROONDAS $100.000")
+#         print("4.- SALIR")
+#         op=int(input())
+#         match op:
+#             case 1:
+#                 print(f"El total a pagar es: {500000*1.19}" )
+#                 total+=500000*1.19
+#             case 2:
+#                 print(f"El total a pagar es: {450000*1.19}")
+#                 total+=450000*1.19
+#             case 3:
+#                 print(f"El total a pagar es: {100000*1.19}")
+#                 total+=100000*1.19
+#             case 4:
+#                 print("Saliendo")
+#                 print(f"El total a pagar es {total}")
+#             case _:
+#                 print("Opcion invalida")
+
+# op=0
+# while op != 4:
+#     print("PROGRAMAS DE PYTHON")
+#     print("1.-  Promedio de notas")
+#     print("2.-  Calculadora")
+#     print("3.-  Tienda")
+#     print("4.-  Salir")
+#     op=int(input())
+#     match op:
+#         case 1: 
+#             promedio()
+#         case 2: 
+#             calculadora()
+#         case 3: 
+#             tienda()
+#         case 4:
+#             print("Saliendo")
+#         case _:
+#             print("Opcion Invalida")

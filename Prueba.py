@@ -427,34 +427,34 @@
 #     n2=int(input("Ingrese otro numero: "))
 #     print(f"El resultado es {n1/n2}")
 # def calculadora():
-    op=0
-    total=0
-    while op != 5:
-        print("== CALCULADORA ==")
-        print("1.- Sumar")
-        print("2.- Restar")
-        print("3.- Multiplicar")
-        print("4.- Dividir")
-        print("5.- SALIR")
-        op=int(input())
-     match op:
-        case 1:
-            suma()
+    # op=0
+    # total=0
+    # while op != 5:
+    #     print("== CALCULADORA ==")
+    #     print("1.- Sumar")
+    #     print("2.- Restar")
+    #     print("3.- Multiplicar")
+    #     print("4.- Dividir")
+    #     print("5.- SALIR")
+    #     op=int(input())
+    #  match op:
+    #     case 1:
+    #         suma()
 
-        case 2:
-            resta()
+    #     case 2:
+    #         resta()
 
-        case 3:
-            mult()
+    #     case 3:
+    #         mult()
 
-        case 4:
-            div() 
+    #     case 4:
+    #         div() 
 
-        case 5:
-            print("Saliendo")
+    #     case 5:
+    #         print("Saliendo")
 
-        case _:
-            print("Opcion invalida")
+    #     case _:
+    #         print("Opcion invalida")
 
 
 #Tarea 1
@@ -553,3 +553,135 @@
 #             print("Saliendo")
 #         case _:
 #             print("Opcion Invalida")
+
+#==================================================
+
+
+#Ejemplos de random
+
+# import random
+
+# num=random.randint(1,10)
+# print(num)
+
+# for i in range(num):
+#     print("Hola Seba")
+
+#==================================================
+
+# dado1=random.randint(1,6)
+
+# print(F"El dado dio {dado1}")
+
+#==================================================
+
+# Ejercicio 1 Adivinar un numero del 1,10 (SIN TERMINAR)
+
+# import random
+
+# intentos=5
+
+# num=random.randint(1,10)
+
+
+
+# for i in range (5):
+
+#     asw=int(input("Adivine el numero:"))
+
+#     if asw<num:
+#         print("El numero a adivinar es mayor ")
+
+#     else:
+#         print("El numero a adivinar es menor ")
+    
+
+#         if asw==num:
+#             print("Adivinaste ")
+
+#         elif intentos==5:
+#             print(f"Intentos terminados. El numero era {num} ")
+
+#=====================================================
+
+#Ejercicio 2 Crear un ludo
+
+# import time
+# import random
+
+# acum=0
+
+# while acum!=30:
+
+#     dado=random.randint(1,6)
+#     dado2=random.randint(1,6)
+
+#     print(f"Usted saco un {dado}")
+#     time.sleep(2)
+#     print(f"Usted saco un {dado2}")
+#     time.sleep(2)
+#     print(f"Avanzas {dado+dado2} casillas")
+    
+#     acum=acum+dado+dado2
+
+# if acum==30:
+#     print(f"Has ganado, haz llegado a {acum}")
+
+
+#======================================================
+
+#Ejercicio 3 crear un juego de pelea
+
+# import random
+# import time
+
+# fighter1=100
+# fighter2=100
+
+
+# while fighter1 or fighter2 >0:
+#     golpe=random.randint(7,18)
+#     golpe2=random.randint(7,18)
+#     print(f"Fighter 1 hizo {golpe} de Daño!")
+#     fighter2=fighter2-golpe
+#     time.sleep(2)
+#     print(f"Fighter 2 tiene {fighter2} puntos de vida")
+#     if fighter2<=0:
+#         print("Fighter 1 Gano!")
+#         break
+
+#     time.sleep(2)
+#     print(f"Fighter 2 hizo {golpe2} de Daño!") 
+#     fighter1=fighter1-golpe2
+#     time.sleep(2)
+#     print(f"Fighter 1 tiene {fighter2} puntos de vida")
+#     time.sleep(2)
+#     if fighter1<=0:
+#         print("Fighter 2 Gano!")
+#         break
+    
+#========================================================
+
+#Ejercicio 4 Juego de golf
+
+# import random
+# import time
+
+# j1=random.randint(60,190)
+# j2=random.randint(60,190)
+# j3=random.randint(60,190)
+# print(f"El jugador 1 lanzo la pelota {j1} Metros")
+# time.sleep(2)
+# print(f"El jugador 2 lanzo la pelota {j2} Metros")
+# time.sleep(2)
+# print(f"El jugador 3 lanzo la pelota {j3} Metros")
+
+# if j1>j2 and j1>j3:
+#     print("El jugador 1 lanzo la pelota mas lejos")
+    
+# elif j2>j3:
+#     print("El jugador 2 lanzo la pelota mas lejos")
+    
+# else:
+#     print("El jugador 3 lanzo la pelota mas lejos")
+    

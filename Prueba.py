@@ -509,9 +509,9 @@
 #             case _:
 #                 print("Opcion invalida")
 # def tienda():
-#     op=0
-#     total=0
-#     while op != 4:
+# op=0
+# total=0
+# while op != 4:
 #         print("== TIENDA ==")
 #         print("1.- PC $500.000")
 #         print("2.- LGTV $450.000")
@@ -557,7 +557,7 @@
 #==================================================
 
 
-#Ejemplos de random
+#Ejemplos RANDOM
 
 # import random
 
@@ -685,3 +685,140 @@
 # else:
 #     print("El jugador 3 lanzo la pelota mas lejos")
     
+
+# EJERCICIOS REPASO PARA LA PRUEBA
+
+# 1)
+
+#USO DEL FOR
+
+# op=0
+# cantP=0
+# total=0
+# niños=0
+# limite=0
+# while op !=4:
+#     print(''' ==EPSTEIN ISLAND==
+#     1.- Niño (1-17) $1.000
+#     2.- Adulto (18-64) $3.000
+#     3.- Adulto Mayor (64 o más) $1.500     
+#     4.- Salir''')
+#     op=int(input())
+#     match op:
+#         case 1:
+#             print("Usted selecciono entrada: Niño")
+#             c=int(input("Cuantos niños son? (1-10): "))
+            
+#             if c>1 or c<=10:
+#                 total+=1000*c
+#                 cantP+=c
+#             else:
+#                 print("ERROR: FUERA DE RANGO")
+                
+#         case 2:
+#             print("Usted selecciono entrada: Adulto")
+#             c=int(input("Cuantos adultos son? (1-10): "))
+#             if  c>1 or c<=10:
+#                 total+=3000*c
+#                 cantP+=c
+#             else:
+#                 print("ERROR: FUERA DE RANGO")
+        
+#         case 3:
+#             print("Usted selecciono entrada: Adulto Mayor")
+#             c=int(input("Cuantos adultos son? (1-10): "))
+#             if  c>1 or c<=10:
+#                 total+=1500*c
+#                 cantP+=c
+#             else:
+#                 print("ERROR: FUERA DE RANGO")
+        
+#         case 4:
+#             print("Saliendo")
+#             print(f"El total a pagar es: {total}")
+#             print(f"Tickets: {cantP}")
+#         case _:
+#             print()
+            
+
+#USO DEL WHILE
+
+# op=0
+# cantP=0
+# total=0
+# niños=0
+# limite=0
+# while op !=4:
+#     print(''' ==EPSTEIN ISLAND==
+#     1.- Niño (1-17) $1.000
+#     2.- Adulto (18-64) $3.000
+#     3.- Adulto Mayor (64 o más) $1.500     
+#     4.- Salir''')
+#     op=int(input())
+#     match op:
+#         case 1:
+#             print("Usted selecciono entrada: Niño")
+#             c=int(input("Cuantos niños son? (1-10): "))
+#             while c<1 or c>10:
+#                 print("ERROR: FUERA DE RANGO")
+#             total+=1000*c
+#             cantP+=c
+                
+#         case 2:
+#             print("Usted selecciono entrada: Adulto")
+#             c=int(input("Cuantos adultos son? (1-10): "))
+#             while c<1 or c>10:
+#                 print("ERROR: FUERA DE RANGO")
+#             total+=3000*c
+#             cantP+=c
+        
+#         case 3:
+#             print("Usted selecciono entrada: Adulto Mayor")
+#             while c<1 or c>10:
+#                 print("ERROR: FUERA DE RANGO")
+#             total+=1500*c
+#             cantP+=c
+        
+#         case 4:
+#             print("Saliendo")
+#             print(f"El total a pagar es: {total}")
+#             print(f"Tickets: {cantP}")
+#         case _:
+#             print()
+
+
+#2) (INACABADO, HACER QUE EL DESCUENTO RANDOM AL APLICARSE, APAREZCA EN LA PANTALLA UN TEXTO QUE DIGA: DESCUENTO APLICADO. PRECIO FINAL: (PRECIO CON DESCUENTO))
+
+# import random
+# import time
+
+# cod=random.randint(1, 21000)
+
+# vip=40000*1.8
+# general=40000*1.4
+# tribuna=40000*1.2
+# pd=vip*0.90
+# asw=int(input('''
+#     QUE CANCHA ES?
+          
+#     1.- Vip - $40000
+#     2.- General - $40000
+#     3.- Tribuna - $40000      
+          
+#     '''))
+    
+# match asw:
+#         case 1:
+#                 print(f"Precio a pagar: {vip}")
+
+#         case 2:
+#                 print(f"Precio a pagar: {general}")
+
+#         case 3:
+#                 print(f"Precio a pagar: {tribuna}")
+
+
+
+# if cod <6999 and cod>21001:
+#         print(f"Precio a pagar con descuento: {pd}")
+
